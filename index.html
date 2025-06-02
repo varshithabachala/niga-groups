@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>niGa - Patent Drafting & Idea Generation</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- External CSS and JavaScript -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-gray-950">
+    <!-- Rest of your HTML content remains unchanged -->
+
+    <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo Left -->
+        <a href="#home" class="flex items-center">
+          <img src="WhatsApp_Image_2025-04-19_at_13.18.59_2e494e43-removebg-preview.png" alt="niGa Logo" class="h-10 mr-2">
+        </a>
+        <!-- Navigation Links and Button Right -->
+        <div class="flex items-center space-x-6 ml-auto">
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+            <a href="#roadmap" class="text-gray-600 hover:text-primary transition-colors">Road Map</a>
+            <a href="#submit" class="text-gray-600 hover:text-primary transition-colors">Got an idea?</a>
+          </div>
+          <a href="#contact" class="hidden md:inline-block bg-primary text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-primary/90 transition-all duration-200 ml-4">
+            Get in Touch
+          </a>
+          <!-- Menu Button Right (mobile) -->
+          <button class="md:hidden w-10 h-10 flex items-center justify-center ml-2">
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen py-20 bg-gray-900 relative overflow-hidden flex items-center">
+      <div class="absolute inset-0 z-0 opacity-10 flex justify-end">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-gray-900 z-10"></div>
+        <img src="WhatsApp_Image_2025-04-19_at_13.18.59_2e494e43-removebg-preview.png" 
+             alt="Background Pattern" 
+             class="w-[800px] h-[800px] object-cover">
+      </div>
+      <div class="container mx-auto px-6 relative z-10 h-full flex items-center">
+        <div class="flex flex-col lg:flex-row items-center w-full">
+         <div class="lg:w-1/2 mb-12 lg:mb-0">
+           <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+             Transforming Ideas into Protected Innovations
+           </h1>
+              <p class="text-xl text-gray-300 mb-8 max-w-lg">
+                We specialize in patent drafting, filing, and intellectual property management for innovators and businesses worldwide.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-primary-dark transition-colors">
+                  Get Started
+                </a>
+                <a href="#services" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-button font-medium hover:bg-white hover:text-gray-900 transition-colors">
+                  Our Services
+                </a>
+              </div>
+              
+              <!-- Trust indicators -->
+              <div class="mt-12 flex flex-wrap items-center gap-8">
+                <div class="flex items-center">
+                  <div class="text-primary text-3xl mr-2"><i class="ri-shield-check-fill"></i></div>
+                  <div>
+                    <p class="text-white font-bold">100% Success Rate</p>
+                    <p class="text-gray-400 text-sm">Patent Applications</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  
+                  <div>
+                    <p class="text-white font-bold"> </p>
+                    <p class="text-gray-400 text-sm"> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+<!-- Key Benefits Section -->
+<section class="py-16 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white" data-aos="fade-down" data-aos-duration="800">Why Choose niGa?</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Benefit 1 -->
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+        <div class="benefit-card-inner">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-speed-up-line text-2xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Accelerated Process</h3>
+          <p class="text-gray-600">Our AI-assisted drafting technology reduces patent preparation time by up to 60%.</p>
+        </div>
+      </div>
+      
+      <!-- Benefit 2 -->
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+        <div class="benefit-card-inner">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-shield-star-line text-2xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Higher Success Rate</h3>
+          <p class="text-gray-600">Our strategic approach has resulted in a 100% patent approval rate for our clients.</p>
+        </div>
+      </div>
+      
+      <!-- Benefit 3 -->
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="benefit-card-inner">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-global-line text-2xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Global Protection</h3>
+          <p class="text-gray-600">We secure patent protection across multiple jurisdictions worldwide.</p>
+        </div>
+      </div>
+      
+      <!-- Benefit 4 -->
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+        <div class="benefit-card-inner">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-team-line text-2xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Expert Team</h3>
+          <p class="text-gray-600">Our multidisciplinary team includes patent attorneys, engineers, and industry specialists.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Overview -->
+<section id="services" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4 text-white" data-aos="fade-up">Our Comprehensive Patent Services</h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">From initial concept evaluation to final patent issuance, we provide end-to-end intellectual property services.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="border border-gray-700 rounded-lg p-8 hover:border-primary transition-colors bg-white" data-aos="fade-right" data-aos-duration="800" data-aos-offset="300">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+          <i class="ri-search-line text-2xl text-primary"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Patentability Assessment</h3>
+        <p class="text-gray-600 mb-4">We evaluate your innovation against existing patents to determine patentability and identify potential obstacles.</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Prior art search</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Novelty analysis</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Competitive landscape review</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 2 -->
+      <div class="border border-gray-700 rounded-lg p-8 hover:border-primary transition-colors bg-white" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300" data-aos-delay="200">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+          <i class="ri-draft-line text-2xl text-primary"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Patent Drafting</h3>
+        <p class="text-gray-600 mb-4">Our expert team creates comprehensive patent applications that maximize protection for your innovation.</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Claims development</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Technical illustrations</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Specification writing</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 3 -->
+      <div class="border border-gray-700 rounded-lg p-8 hover:border-primary transition-colors bg-white" data-aos="fade-left" data-aos-duration="800" data-aos-offset="300" data-aos-delay="400">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+          <i class="ri-file-paper-2-line text-2xl text-primary"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Patent Filing & Prosecution</h3>
+        <p class="text-gray-600 mb-4">We handle the entire filing process and respond to office actions to secure your patent.</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Application filing</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Office action responses</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+            <span class="text-gray-700">Patent issuance support</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Patent Process Section -->
+  <section id="roadmap" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-white">Our Patent Process</h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">A streamlined approach to securing intellectual property protection for your innovations</p>
+      </div>
+      
+      <div class="relative">
+        <!-- Process Timeline -->
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-600 transform -translate-x-1/2"></div>
+        
+        <div class="space-y-16 relative">
+          <!-- Step 1 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+              <h3 class="text-2xl font-bold mb-3 text-white">Initial Consultation</h3>
+              <p class="text-gray-300">We begin with a thorough discussion of your innovation, its applications, and your business objectives.</p>
+            </div>
+            <div class="md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold z-10 my-4 md:my-0">1</div>
+            <div class="md:w-1/2 md:pl-12" data-aos="fade-right">
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h4 class="font-bold mb-2">What to Expect:</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Confidential discussion of your innovation</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Initial patentability assessment</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Strategic planning for IP protection</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Timeline and cost estimation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-1 md:order-1" data-aos="fade-left">
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h4 class="font-bold mb-2">Our Approach:</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Global patent database search</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Scientific literature review</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Competitive analysis report</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Identification of potential obstacles</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold z-10 my-4 md:my-0 order-2 md:order-2">2</div>
+            <div class="md:w-1/2 md:pl-12 order-3 md:order-3 md:text-left">
+              <h3 class="text-2xl font-bold mb-3 text-white">Prior Art Search</h3>
+              <p class="text-gray-300">We conduct a comprehensive search to identify existing patents and publications related to your innovation.</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+              <h3 class="text-2xl font-bold mb-3 text-white">Patent Drafting</h3>
+              <p class="text-gray-300">Our expert team creates a comprehensive patent application with claims that maximize protection for your innovation.</p>
+            </div>
+            <div class="md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold z-10 my-4 md:my-0">3</div>
+            <div class="md:w-1/2 md:pl-12" data-aos="fade-right">
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h4 class="font-bold mb-2">Drafting Process:</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Development of broad claim strategy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Creation of detailed technical drawings</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Comprehensive specification writing</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Strategic claim formulation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-1 md:order-1" data-aos="fade-left">
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h4 class="font-bold mb-2">Filing Process:</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Preparation of all filing documents</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Submission to patent office</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Response to examiner's objections</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                    <span>Patent issuance and maintenance</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold z-10 my-4 md:my-0 order-2 md:order-2">4</div>
+            <div class="md:w-1/2 md:pl-12 order-3 md:order-3 md:text-left">
+              <h3 class="text-2xl font-bold mb-3 text-white">Filing & Prosecution</h3>
+              <p class="text-gray-300">We handle the entire filing process and respond to office actions to secure your patent grant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center" data-aos="zoom-in">
+        <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-gray-900 transition-colors inline-block hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+          Start Your Patent Journey
+        </a>
+      </div>
+    </div>
+  </section>
+         
+    </section>
+        <!-- Idea Submission Section -->
+        <section id="submit" class="py-20 bg-gray-900">
+          <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-6 text-white">
+              Tell Us Your Idea
+            </h2>
+            <p class="text-xl text-gray-300 text-center mb-16 max-w-3xl mx-auto">
+              Ready to protect your innovation? Here's what you need to prepare for
+              a successful patent filing.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Requirement 1 -->
+              <div class="bg-white p-8 rounded shadow-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div
+                  class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 mx-auto transition-all duration-300 hover:bg-primary/10 hover:border-primary"
+                >
+                  <i class="ri-slideshow-line text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-4">
+                  Presentation Overview
+                </h3>
+                <p class="text-gray-700 mb-6 text-center transition-colors duration-300 hover:text-primary">
+                  A PowerPoint presentation that outlines your idea, its
+                  applications, and potential market impact.
+                </p>
+                <div class="bg-gray-50 p-4 rounded mb-6 transition-all duration-300 hover:bg-primary/10">
+                  <h4 class="font-medium mb-2">Requirements:</h4>
+                  <ul class="text-gray-700 text-sm space-y-2">
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Problem statement and solution
+                    </li>
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Visual representations
+                    </li>
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Competitive analysis
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-center">
+                    <a
+                      href="PPT sample.pptx"
+                      download="PPT sample.pptx"
+                      class="inline-flex items-center text-primary font-medium hover:underline transition-colors duration-300"
+                    >
+                      <i class="ri-download-line mr-2"></i>
+                      Download Template
+                    </a>
+                  </div>
+              </div>
+              <!-- Requirement 2 -->
+              <div class="bg-white p-8 rounded shadow-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div
+                  class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 mx-auto transition-all duration-300 hover:bg-primary/10 hover:border-primary"
+                >
+                  <i class="ri-file-text-line text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-4">
+                  Detailed Documentation
+                </h3>
+                <p class="text-gray-700 mb-6 text-center transition-colors duration-300 hover:text-primary">
+                  A comprehensive document explaining your approach, methodology,
+                  and technical specifications.
+                </p>
+                <div class="bg-gray-50 p-4 rounded mb-6 transition-all duration-300 hover:bg-primary/10">
+                  <h4 class="font-medium mb-2">Requirements:</h4>
+                  <ul class="text-gray-700 text-sm space-y-2">
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Technical specifications
+                    </li>
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Implementation details
+                    </li>
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Novelty explanation
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-center">
+                    <a
+                      href="Documentation.docx"
+                      download="Documentation.docx"
+                      class="inline-flex items-center text-primary font-medium hover:underline transition-colors duration-300"
+                    >
+                      <i class="ri-download-line mr-2"></i>
+                      Download Template
+                    </a>
+                  </div>
+              </div>
+              <!-- Requirement 3 -->
+              <div class="bg-white p-8 rounded shadow-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div
+                  class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 mx-auto transition-all duration-300 hover:bg-primary/10 hover:border-primary"
+                >
+                  <i class="ri-list-check-2 text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-4">
+                  Requirements List
+                </h3>
+                <p class="text-gray-700 mb-6 text-center transition-colors duration-300 hover:text-primary">
+                  A detailed list of all product or idea requirements, features, and
+                  specifications.
+                </p>
+                <div class="bg-gray-50 p-4 rounded mb-6 transition-all duration-300 hover:bg-primary/10">
+                  <h4 class="font-medium mb-2">Requirements:</h4>
+                  <ul class="text-gray-700 text-sm space-y-2">
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Functional requirements
+                    </li>
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Non-functional requirements
+                    </li>
+                    <li class="flex items-start transition-colors duration-300 hover:text-primary">
+                      <span
+                        class="w-5 h-5 mr-2 flex-shrink-0 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </span>
+                      Technical constraints
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-center">
+                    <a
+                      href="Requirements.xlsx"
+                      download="Requirements.xlsx"
+                      class="inline-flex items-center text-primary font-medium hover:underline transition-colors duration-300"
+                    >
+                      <i class="ri-download-line mr-2"></i>
+                      Download Template
+                    </a>
+                  </div>
+              </div>
+            </div>
+        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-6 text-white">
+          Contact Us
+        </h2>
+        <p class="text-xl text-gray-300 text-center mb-16 max-w-3xl mx-auto">
+          Ready to protect your innovation or have questions about our services?
+          Get in touch with our team.
+        </p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+         <!-- Contact Form -->
+<div class="bg-white p-8 rounded shadow-lg">
+  <h3 class="text-2xl font-bold mb-6">Share Your Idea</h3>
+  <form id="ideaForm" action="#" method="POST" enctype="multipart/form-data">
+    <div class="mb-6">
+      <label for="fullName" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+      <input type="text" id="fullName" name="fullName" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Enter your full name" required>
+    </div>
+    <div class="mb-6">
+      <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+      <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Enter your email address" required>
+    </div>
+    <div class="mb-6">
+      <label for="college" class="block text-sm font-medium text-gray-700 mb-2">College Name</label>
+      <input type="text" id="college" name="college" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="College Name" required>
+    </div>
+    <div class="mb-6">
+      <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Title</label>
+      <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Enter Your Title" required>
+    </div>
+    <div class="mb-6">
+      <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+      <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Enter Any Details About The Idea" required></textarea>
+    </div>
+    <div class="mb-6">
+      <label class="block text-sm font-medium text-gray-700 mb-2">Attach Files <span class="text-red-500">*</span></label>
+      <div class="border-2 border-dashed border-gray-300 rounded p-6 text-center">
+        <i class="ri-upload-cloud-line text-4xl text-gray-400 mb-2"></i>
+        <p class="text-gray-500 mb-2">Drag and drop PDF files here or</p>
+        <input type="file" id="files" name="files" class="hidden" required multiple accept=".pdf"/>
+        <button type="button" class="text-primary font-medium hover:underline" 
+                onclick="document.getElementById('files').click()">
+          Browse Files
+        </button>
+        <p class="text-xs text-red-500 mt-2">Please attach at least 2 PDF files (required)</p>
+        <div id="fileList" class="mt-3 text-left"></div>
+      </div>
+    </div>
+    <div class="mb-6">
+      <label class="flex items-start">
+        <input type="checkbox" required class="mt-1">
+        <span class="ml-2 text-gray-700">
+          I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and
+          <a href="#" class="text-primary hover:underline">Privacy Policy</a>
+        </span>
+      </label>
+    </div>
+    <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-gray-900 transition-colors whitespace-nowrap">
+      Send Message
+    </button>
+  </form>
+</div> 
+                   <!-- Existing scripts -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  });
+
+
+
+  
+</script>
+                    <!-- Contact Information -->
+                    <div>
+                      <div class="bg-white p-8 rounded shadow-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                          <div class="flex flex-col sm:flex-row items-start">
+                            <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 mb-2 sm:mb-0">
+                              <i class="ri-map-pin-line text-primary"></i>
+                            </div>
+                            <div>
+                              <h4 class="font-medium mb-1">Office Location</h4>
+                              <a href="https://maps.google.com/?q=2nd+floor,+Administration+Block,+Mohan+Babu+University,+Tirupati" 
+                                 class="text-gray-600 text-sm sm:text-base hover:text-primary transition-colors" 
+                                 target="_blank">
+                                2nd floor, Administration Block, Mohan Babu University, Tirupati.
+                              </a>
+                            </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row items-start">
+                            <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 mb-2 sm:mb-0">
+                              <i class="ri-phone-line text-primary"></i>
+                            </div>
+                            <div>
+                              <h4 class="font-medium mb-1">Phone Number</h4>
+                              <a href="tel:+919989038540" 
+                                 class="text-gray-600 text-sm sm:text-base hover:text-primary transition-colors">
+                                +91 99890 38540
+                              </a>
+                            </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row items-start">
+                            <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 mb-2 sm:mb-0">
+                              <i class="ri-mail-line text-primary"></i>
+                            </div>
+                            <div>
+                              <h4 class="font-medium mb-1">Email Address</h4>
+                              <a href="mailto:info@niga-patents.com" 
+                                 class="text-gray-600 text-sm sm:text-base hover:text-primary transition-colors">
+                                 nigagroups2025@gmail.com
+                              </a>
+                            </div>
+                          </div>
+             
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mt-12">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between bg-white-900 p-8 rounded shadow-lg"
+      >
+        <div class="mb-6 md:mb-0 md:mr-8">
+          <h3 class="text-2xl font-bold mb-2 text-white">Patent Statistics</h3>
+          <p class="text-gray-300">
+            Our track record of successful patent filings and grants
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">120+</div>
+            <div class="text-gray-300">Patented Ideas</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">100%</div>
+            <div class="text-gray-300">Success Rate</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">7</div>
+            <div class="text-gray-300">Patents Filed</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">12</div>
+            <div class="text-gray-300">Technology Fields</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-12 mt-0">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <a href="#" class="font-['Pacifico'] text-3xl text-white mb-6 block"
+              >niGa</a
+            >
+            <p class="text-gray-400 mb-6">
+              Transforming innovative ideas into protected intellectual property
+              since 2025.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#directors"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Road Map</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Share Your Idea</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#submit"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Be In Touch</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-6">Services</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Patent Drafting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Patent Filing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Idea Generation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Project Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Patent Litigation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >IP Strategy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-6">Legal</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Disclaimer</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 niGa. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition-colors text-sm"
+              >Terms</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition-colors text-sm"
+              >Privacy</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition-colors text-sm"
+              >Cookies</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
