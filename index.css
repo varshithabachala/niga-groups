@@ -1,0 +1,536 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.hero-bg {
+  background-image: url('https://readdy.ai/api/search-image?query=Dark%2520futuristic%2520technology%2520background%2520with%2520deep%2520blue%2520and%2520black%2520gradient.%2520Abstract%2520geometric%2520patterns%2520and%2520glowing%2520lines%2520suggesting%2520innovation%2520and%2520advancement.%2520Subtle%2520digital%2520grid%2520overlay.%2520Perfect%2520for%2520modern%2520tech%2520company%2520hero%2520section.%2520Professional%2520and%2520sophisticated%2520design.&width=1920&height=1080&seq=1&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(17, 24, 39, 0.9) 0%, rgba(17, 24, 39, 0.7) 100%);
+}
+
+.hero-bg > div {
+  position: relative;
+  z-index: 1;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.custom-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+
+/* Benefit Card Hover Effects - New Animation */
+/* New Benefit Card Hover Effects */
+/* Remove benefit card hover effects */
+.benefit-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2px;
+  transition: none;
+  margin-bottom: 1px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card-inner {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  transition: none;
+  height: 100%;
+}
+
+.benefit-card-inner:hover {
+  transform: none;
+  border-radius: 18px;
+}
+
+.benefit-card:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove old benefit card styles */
+.blur-circle-top, .blur-circle-left {
+  display: none;
+}
+
+.blur-circle-top {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #4338ca;
+  right: 1px;
+  top: -12px;
+  filter: blur(10px);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.blur-circle-left {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0369a1;
+  left: 12px;
+  bottom: 12px;
+  filter: blur(10px);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+/* Hover effects */
+.benefit-card:hover::before {
+  filter: blur(0);
+  transform: translate(12px, 2px);
+}
+
+.benefit-card:hover::after {
+  filter: blur(0);
+  transform: translate(12px, 12px);
+}
+
+.benefit-card:hover .blur-circle-top {
+  filter: blur(0);
+  transform: translate(12px, -12px);
+}
+
+.benefit-card:hover .blur-circle-left {
+  filter: blur(0);
+  transform: translate(-12px, 0);
+}
+
+.benefit-content {
+  position: relative;
+  z-index: 10;
+}
+
+.benefit-card:hover .benefit-title {
+  color: #fff !important;
+  transition: color 0.5s;
+}
+
+.benefit-card:hover .benefit-text {
+  color: #fff !important;
+  transition: color 0.5s;
+}
+
+.benefit-card:hover .benefit-icon {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.5s;
+}
+
+.benefit-card:hover .benefit-icon i {
+  color: white !important;
+  transition: color 0.5s;
+}
+
+
+/* Benefit Card Hover Animations */
+.benefit-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+.benefit-card-inner {
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #f8fafc;
+}
+
+.benefit-card:hover i {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
+
+.benefit-card i {
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover h3 {
+  color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.benefit-card h3 {
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .w-16 {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.benefit-card .w-16 {
+  transition: all 0.3s ease;
+}
+
+
+/* Elementor-style Animated Cards With Hover Effects */
+.elementor-card {
+  perspective: 1000px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.elementor-card-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.elementor-card:hover .elementor-card-wrapper {
+  transform: rotateY(180deg);
+}
+
+.elementor-card-front, .elementor-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.elementor-card-front {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.elementor-card-image {
+  height: 70%;
+  overflow: hidden;
+}
+
+.elementor-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.5s ease;
+}
+
+.elementor-card:hover .elementor-card-image img {
+  transform: scale(1.05);
+}
+
+.elementor-card-content {
+  padding: 20px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.elementor-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.elementor-card-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.elementor-card-back {
+  background-color: #3b82f6;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.elementor-card-back-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.elementor-card-back .elementor-card-title {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.elementor-card-back .elementor-card-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+.elementor-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.elementor-card-tags span {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.elementor-card-description {
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.elementor-card-social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.elementor-card-social a {
+  color: white;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.elementor-card-social a:hover {
+  transform: scale(1.2);
+}
+
+
+/* Landscape Card Animation for Team Section */
+/* Team Section Cards */
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  height: 320px; /* Increased height */
+  aspect-ratio: 3/4; /* Vertical rectangular shape */
+}
+
+.card__img {
+  width: 100%;
+  height: 70%; /* Adjusted image height */
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
+
+.card__data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem; /* Increased padding */
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, transparent 100%);
+  color: white;
+  height: 30%; /* Fixed data section height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card__container {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .card__container {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .card__article {
+    height: 300px;
+  }
+}
+
+
+/* Add these styles to ensure consistent form behavior */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.file-upload-area {
+  transition: all 0.3s ease;
+}
+
+.file-upload-area:hover {
+  border-color: #3b82f6;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+}
+
+
+/* Toast animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-20px); }
+}
+
+.fixed.top-4.right-4 {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.opacity-0 {
+  animation: fadeOut 0.3s ease-out;
+}
